@@ -85,8 +85,8 @@ def q9
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-  names.each.with_index(1) do |names, num|
-    puts "会員No.#{num} #{names}さん"
+  names.each.with_index(1) do |name, num|
+    puts "会員No.#{num} #{name}さん"
   end
 
 end
@@ -95,8 +95,8 @@ def q10
   foods = %w(いか たこ うに しゃけ うにぎり うに軍艦 うに丼)
 
   # 以下に回答を記載
-  foods.each do |foods|
-    if foods.include?("うに")
+  foods.each do |food|
+    if food.include?("うに")
       puts "好物です"
     else
       puts "まぁまぁ好きです"
