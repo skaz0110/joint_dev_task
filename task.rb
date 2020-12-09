@@ -126,7 +126,8 @@ def q13
   update_data = { age: 32, address: "沖縄" }
 
   # 以下に回答を記載
-  p user_data.merge(update_data)
+  user_data.merge!(update_data)
+  p user_data
 
 end
 
@@ -134,7 +135,7 @@ def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
-  p data.values
+  p data.keys
 
 end
 
