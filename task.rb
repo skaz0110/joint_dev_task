@@ -179,7 +179,15 @@ end
 
 class UserQ17
   # 以下に回答を記載
-
+  def initialize(profile)
+    @profile = profile
+  end
+  def info
+    puts "名前；#{@profile[:name]}"
+    puts "年齢：#{@profile[:age]}"
+    puts "性別：#{@profile[:gender]}"
+  end
+  
 end
 
 def q17
