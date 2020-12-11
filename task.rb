@@ -204,6 +204,17 @@ end
 
 class UserQ18
   # 以下に回答を記載
+  def initialize(profile)
+    @profile = profile
+  end
+  
+  def introduce
+    if 20 < @profile[:age]
+      "こんにちは，#{@profile[:name]}と申します。宜しくお願いいたします。"
+    else
+      "はいさいまいど〜，#{@profile[:name]}です！！！"
+    end 
+  end
 
 end
 
@@ -222,6 +233,10 @@ class Item
   def initialize(name)
     @name = name
   end
+  def name
+    @name[:name]
+  end
+  
 end
 
 def q19
