@@ -225,6 +225,7 @@ def q18
 
   puts user1.introduce
   puts user2.introduce
+  # baseへ追加
 end
 
 class Item
