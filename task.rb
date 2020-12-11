@@ -179,13 +179,15 @@ end
 
 class UserQ17
   # 以下に回答を記載
-  def initialize(profile)
-    @profile = profile
+  def initialize(**params)
+    @name   = params[:name]
+    @age    = params[:age]
+    @gender = params[:gender] 
   end
   def info
-    puts "名前；#{@profile[:name]}"
-    puts "年齢：#{@profile[:age]}"
-    puts "性別：#{@profile[:gender]}"
+    puts "名前；#{@name}"
+    puts "年齢：#{@age}"
+    puts "性別：#{@gender}"
   end
   
 end
