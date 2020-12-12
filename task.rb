@@ -257,15 +257,6 @@ end
 
 class Zoo
   # 以下に回答を記載
-  def initialize(**params)
-    @name      = params[:name]
-    @entry_fee = params[:entry_fee]
-  end
-  def info_entry_fee
-    @name 
-    @entry_fee
-  end
-  
   
 end
 
