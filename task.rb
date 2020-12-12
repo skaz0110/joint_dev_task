@@ -204,15 +204,16 @@ end
 
 class UserQ18
   # 以下に回答を記載
-  def initialize(profile)
-    @profile = profile
+  def initialize(**params)
+    @name = params[:name]
+    @age  = params[:age]
   end
   
   def introduce
-    if 20 < @profile[:age]
-      "こんにちは，#{@profile[:name]}と申します。宜しくお願いいたします。"
+    if 20 < @age
+      "こんにちは，#{@name}と申します。宜しくお願いいたします。"
     else
-      "はいさいまいど〜，#{@profile[:name]}です！！！"
+      "はいさいまいど〜，#{@name}です！！！"
     end 
   end
 
@@ -225,17 +226,16 @@ def q18
 
   puts user1.introduce
   puts user2.introduce
-  # baseへ追加
 end
 
 class Item
   # 以下を修正して下さい
 
-  def initialize(name)
-    @name = name
+  def initialize(**params)
+    @name = params[:name]
   end
   def name
-    @name[:name]
+    @name
   end
   
 end
@@ -248,12 +248,25 @@ end
 
 class UserQ20
   # 以下に回答を記載
-
+  def initialize(**params)
+    @name  = params[:name]
+    @age   = params[:entry_fee]
+  end
+  
 end
 
 class Zoo
   # 以下に回答を記載
-
+  def initialize(**params)
+    @name      = params[:name]
+    @entry_fee = params[:entry_fee]
+  end
+  def info_entry_fee
+    @name 
+    @entry_fee
+  end
+  
+  
 end
 
 
